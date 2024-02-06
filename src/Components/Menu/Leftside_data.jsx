@@ -65,7 +65,15 @@ const Leftside_data = () => {
   return (
     <div className="max-w-[360px] w-full h-full bg-[#F0F2F5] p-5 ">
       <div className="flex   flex-col justify-center">
-        <Leftside_cart title={"asdf"} icon={"asdf"} />
+        <Leftside_cart title={"sudip shrestha"} icon={<img src={'https://scontent.fbhr4-1.fna.fbcdn.net/v/t39.30808-1/411738791_122098223012159401_2080266576038945155_n.jpg?stp=dst-jpg_p320x320&_nc_cat=110&ccb=1-7&_nc_sid=5740b7&_nc_ohc=Pq3DutQerAsAX-xeDDx&_nc_ht=scontent.fbhr4-1.fna&oh=00_AfDteVQofHRjjPecqJQa2mDCDMzjjtfxEO7UgNVoaih0RA&oe=65C79842'} className='rounded-full' />} />
+        <Leftside_cart title={"favourite"} icon={ <img src={icon1} />} />
+        <Leftside_cart title={"group"} icon={ <img src={icon2} />} />
+        <Leftside_cart title={"play game"} icon={ <img src={icon3} />} />
+        <Leftside_cart title={"pages"} icon={ <img src={icon4} />} />
+        <Leftside_cart title={"creater"} icon={ <img src={icon5} />} />
+        <Leftside_cart title={"saved"} icon={ <img src={icon6} />} />
+        <Leftside_cart title={"company"} icon={ <img src={icon7} />} />
+        
       </div>
     </div>
   );

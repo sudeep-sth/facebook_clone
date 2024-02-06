@@ -7,7 +7,9 @@ const Facebook_home = () => {
 
 
   return (
-    <div className="h-full bg-red-100 flex gap-2 justify-center">
+    <div className="h-10 w-[800px] bg-red-100 flex gap-2 justify-center border-5 border-black">
+      <div className='w-[590px] h-[265px]'>
+      <div className='w-[590px] h-[250px] flex gap-2 justify-center border-2 border-white'>
       <StoryCart
         image={
           <img
@@ -30,6 +32,9 @@ const Facebook_home = () => {
 
       <StoryCart />
       <StoryCart />
+      </div>
+      </div>
+
     </div>
   );
 }
