@@ -31,7 +31,7 @@ const RightSidebar = () => {
     ]
 
   return (
-    <div className='max-w-[300px] w-full bg-[#F0F2F5]'>
+    <div className='max-w-[360px] w-full bg-[#F0F2F5]'>
       {
         RightSidebardata.map((items, index) => {
           return (
