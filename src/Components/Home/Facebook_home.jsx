@@ -24,6 +24,9 @@ const Facebook_home = () => {
           />
 
           <StoryCart
+            url={
+              "https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            }
             name={<h6 className="font-semibold text-[15px]">sudip shrestha</h6>}
           />
 
