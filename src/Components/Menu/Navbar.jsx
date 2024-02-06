@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
 
 import { BiSolidUser } from "react-icons/bi";
 import { CgGames } from "react-icons/cg";
@@ -15,124 +15,121 @@ import { RxAvatar } from "react-icons/rx";
 import { IoSearch } from "react-icons/io5";
 
 const Navbar = () => {
+  const location = useLocation();
 
-    const location = useLocation();
+  const Navbardata = [
+    {
+      path: "/home",
+      icon: <AiFillHome className="" />,
+      name: "home",
+    },
+    {
+      path: "/video",
+      icon: <PiVideoFill />,
+      name: "video",
+    },
+    {
+      path: "/market",
+      icon: <FaLandmark />,
+      name: "market",
+    },
+    {
+      path: "/group",
+      icon: <RiGroup2Fill />,
+      name: "group",
+    },
+    {
+      path: "/games",
+      icon: <CgGames />,
+      name: "games",
+    },
+  ];
 
-    const Navbardata = [
-        {
-            path: '/home',
-            icon: <AiFillHome className=''  />,
-            name: 'home'
-        },
-        {
-            path: '/video',
-            icon: <PiVideoFill />,
-            name: 'video'
-        },
-        {
-            path: '/market',
-            icon: <FaLandmark />,
-            name: 'market'
-        },
-        {
-            path: '/group',
-            icon: <RiGroup2Fill />,
-            name: 'group'
-        },
-        {
-            path: '/games',
-            icon: <CgGames />,
-            name: 'games'
-        },
+  const NavbardataRight = [
+    {
+      path: "/app",
+      icon: <MdSpaceDashboard />,
+      name: "app",
+    },
 
+    {
+      path: "/message",
+      icon: <AiTwotoneMessage />,
+      name: "message",
+    },
 
-    ]
+    {
+      path: "/notification",
+      icon: <IoMdNotifications />,
+      name: "notification",
+    },
 
-    const NavbardataRight = [
-        {
-            path: '/app',
-            icon: <MdSpaceDashboard />,
-            name: 'app'
-        },
+    {
+      path: "/avtar",
+      icon: (
+        <img
+          src={
+            "https://scontent.fbhr4-1.fna.fbcdn.net/v/t39.30808-1/411738791_122098223012159401_2080266576038945155_n.jpg?stp=dst-jpg_p320x320&_nc_cat=110&ccb=1-7&_nc_sid=5740b7&_nc_ohc=Pq3DutQerAsAX-xeDDx&_nc_ht=scontent.fbhr4-1.fna&oh=00_AfDteVQofHRjjPecqJQa2mDCDMzjjtfxEO7UgNVoaih0RA&oe=65C79842"
+          }
+          className="rounded-full border border-red-500"
+        />
+      ),
+      name: "avtar",
+    },
+  ];
 
-
-        {
-            path: '/message',
-            icon: <AiTwotoneMessage />,
-            name: 'message'
-        },
-
-
-        {
-            path: '/notification',
-            icon: <IoMdNotifications />,
-            name: 'notification'
-        },
-
-
-        {
-            path: '/avtar',
-            icon: <RxAvatar />,
-            name: 'avtar'
-        },
-
-
-    ]
-
-    return (
-        <div className='max-w-screen  w-full flex justify-between bg-white '>
-
-            <div className='max-w-[320px] h-14 w-full flex  items-center gap-2  px-2 pl-4'>
-              <div className='w-10 h-14 items-center flex'> 
-                <img src="https://cdn.iconscout.com/icon/free/png-256/free-facebook-2038471-1718509.png" alt=""  className='w-10 h-10'/>
-              </div>
-               <div className='w-[240px] h-[40px] bg-gray-300 border flex items-center gap-2  px-2  rounded-full'>
-                <IoSearch />
-                <input type="text" placeholder='search' className='p-1 bg-gray-300 rounded-full w-[210px] h-[39px] border-0 border-opacity-0'/>
-            </div>
-            </div>
-
-
-{/* center topbar */}
-            <div className='flex max-w-[800px] w-full justify-around items-center'>
-                {Navbardata.map((items, index) => {
-                    return (
-                        <Link
-                            to={items.path}
-                            key={index}
-                            className=''
-                        >
-                            <div className={`${location.pathname === items.path? "fill-blue-400" : ""}  text-2xl w-[111px] h-[56px] items-center flex justify-center hover:bg-slate-400 hover:`}>{items.icon}</div>
-                            {/* <div>{items.name}</div> */} 
-
-                        </Link>
-                    )
-                })}
-            </div>
-
-
-{/* right topbar */}
-            <div className='flex gap-4 max-w-[300px] w-full  justify-end items-center'>
-                {
-                    NavbardataRight.map((items, index) => {
-                        return (
-                            <Link
-                                to={items.path}
-                                key={index}
-                                className=''
-                            >
-                                <div className='bg-[#e4e6eb] rounded-full w-10 h-10 flex items-center justify-center'>
-                                <div className=' text-2xl w-6 h-6'>{items.icon}</div>
-                                </div>
-                            </Link>
-                        )
-                    })
-                }
-
-            </div>
+  return (
+    <div className="max-w-screen  w-full flex justify-between bg-white fixed  ">
+      <div className="max-w-[320px] h-14 w-full flex  items-center gap-2  px-2 pl-4">
+        <div className="w-10 h-14 items-center flex">
+          <img
+            src="https://cdn.iconscout.com/icon/free/png-256/free-facebook-2038471-1718509.png"
+            alt=""
+            className="w-10 h-10"
+          />
         </div>
-    )
+        <div className="w-[240px] h-[40px] bg-gray-300 border flex items-center gap-2  px-2  rounded-full">
+          <IoSearch />
+          <input
+            type="text"
+            placeholder="search"
+            className="p-1 bg-gray-300 rounded-full w-[210px] h-[39px] border-0 border-opacity-0"
+          />
+        </div>
+      </div>
 
-}
+      {/* center topbar */}
+      <div className="flex max-w-[800px] w-full justify-center items-center">
+        {Navbardata.map((items, index) => {
+          return (
+            <Link to={items.path} key={index} className="">
+              <div
+                className={`${
+                  location.pathname === items.path ? "fill-blue-400" : ""
+                }  text-2xl w-[111px] h-[56px] items-center flex justify-center hover:bg-slate-400 hover:`}
+              >
+                {items.icon}
+              </div>
+              {/* <div>{items.name}</div> */}
+            </Link>
+          );
+        })}
+      </div>
 
-export default Navbar
+      {/* right topbar */}
+      <div className="flex gap-4 max-w-[300px] w-full  justify-end items-center">
+        {NavbardataRight.map((items, index) => {
+          return (
+            <Link to={items.path} key={index} className="">
+              <div className="bg-[#e4e6eb] rounded-full w-10 h-10 flex items-center justify-center">
+                <div className=" text-2xl w-6 h-6">{items.icon}</div>
+              </div>
+            </Link>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;

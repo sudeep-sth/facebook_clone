@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.mycss{
-    color: blue;
-    background-color: red;
+.no-scrollbar::-webkit-scrollbar{
+display: none;
 }

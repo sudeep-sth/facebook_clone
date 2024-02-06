@@ -1,15 +1,13 @@
+import React from "react";
 
-
-import React from 'react'
-
-import { Link } from 'react-router-dom'
-import icon1 from '../../assets/heart.png'
-import icon2 from '../../assets/group.png'
-import icon3 from '../../assets/game.png'
-import icon4 from '../../assets/flag.png'
-import icon5 from '../../assets/box.png'
-import icon6 from '../../assets/saved.png'
-import icon7 from '../../assets/company.png'
+import { Link } from "react-router-dom";
+import icon1 from "../../assets/heart.png";
+import icon2 from "../../assets/group.png";
+import icon3 from "../../assets/game.png";
+import icon4 from "../../assets/flag.png";
+import icon5 from "../../assets/box.png";
+import icon6 from "../../assets/saved.png";
+import icon7 from "../../assets/company.png";
 import { Leftside_cart } from "./Leftside_cart";
 
 const Leftside_data = () => {
@@ -63,21 +61,55 @@ const Leftside_data = () => {
     },
   ];
   return (
-    <div className="max-w-[360px] w-full h-full bg-[#F0F2F5] p-5 ">
+    <div className="max-w-[360px] w-full h-full bg-[#F0F2F5] p-5 overflow-y-scroll no-scrollbar">
       <div className="flex   flex-col justify-center">
-        <Leftside_cart title={"sudip shrestha"} icon={<img src={'https://scontent.fbhr4-1.fna.fbcdn.net/v/t39.30808-1/411738791_122098223012159401_2080266576038945155_n.jpg?stp=dst-jpg_p320x320&_nc_cat=110&ccb=1-7&_nc_sid=5740b7&_nc_ohc=Pq3DutQerAsAX-xeDDx&_nc_ht=scontent.fbhr4-1.fna&oh=00_AfDteVQofHRjjPecqJQa2mDCDMzjjtfxEO7UgNVoaih0RA&oe=65C79842'} className='rounded-full' />} />
-        <Leftside_cart title={"favourite"} icon={ <img src={icon1} />} />
-        <Leftside_cart title={"group"} icon={ <img src={icon2} />} />
-        <Leftside_cart title={"play game"} icon={ <img src={icon3} />} />
-        <Leftside_cart title={"pages"} icon={ <img src={icon4} />} />
-        <Leftside_cart title={"creater"} icon={ <img src={icon5} />} />
-        <Leftside_cart title={"saved"} icon={ <img src={icon6} />} />
-        <Leftside_cart title={"company"} icon={ <img src={icon7} />} />
-        
+        <Leftside_cart
+          title={"sudip shrestha"}
+          icon={
+            <img
+              src={
+                "https://scontent.fbhr4-1.fna.fbcdn.net/v/t39.30808-1/411738791_122098223012159401_2080266576038945155_n.jpg?stp=dst-jpg_p320x320&_nc_cat=110&ccb=1-7&_nc_sid=5740b7&_nc_ohc=Pq3DutQerAsAX-xeDDx&_nc_ht=scontent.fbhr4-1.fna&oh=00_AfDteVQofHRjjPecqJQa2mDCDMzjjtfxEO7UgNVoaih0RA&oe=65C79842"
+              }
+              className="rounded-full"
+            />
+          }
+        />
+        <Leftside_cart title={"favourite"} icon={<img src={icon1} />} />
+        <Leftside_cart title={"group"} icon={<img src={icon2} />} />
+        <Leftside_cart title={"play game"} icon={<img src={icon3} />} />
+        <Leftside_cart title={"pages"} icon={<img src={icon4} />} />
+        <Leftside_cart title={"creater"} icon={<img src={icon5} />} />
+        <Leftside_cart title={"saved"} icon={<img src={icon6} />} />
+        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
       </div>
     </div>
   );
 };
 
-export default Leftside_data
-
+export default Leftside_data;
