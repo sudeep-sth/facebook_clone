@@ -68,7 +68,7 @@ const Leftside_data = () => {
           icon={
             <img
               src={
-                "https://scontent.fbhr4-1.fna.fbcdn.net/v/t39.30808-1/411738791_122098223012159401_2080266576038945155_n.jpg?stp=dst-jpg_p320x320&_nc_cat=110&ccb=1-7&_nc_sid=5740b7&_nc_ohc=Pq3DutQerAsAX-xeDDx&_nc_ht=scontent.fbhr4-1.fna&oh=00_AfDteVQofHRjjPecqJQa2mDCDMzjjtfxEO7UgNVoaih0RA&oe=65C79842"
+                "https://scontent.fktm1-1.fna.fbcdn.net/v/t39.30808-6/411738791_122098223012159401_2080266576038945155_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=Pq3DutQerAsAX9Glzv5&_nc_ht=scontent.fktm1-1.fna&oh=00_AfDpxeYlZXbdePKXTprK-ZIGWuoONAEgQ7oieyl-LMEurw&oe=65C7D8E5"
               }
               className="rounded-full"
             />

@@ -4,6 +4,7 @@ import { Rightside_cart } from "./Rightside_cart";
 
 import { IoSearch } from "react-icons/io5";
 import { SlOptions } from "react-icons/sl";
+import { Rightside_card2 } from "./Rightside_card2";
 
 const RightSidebar = () => {
   const RightSidebardata = [
@@ -28,6 +29,20 @@ const RightSidebar = () => {
 
   return (
     <div className="max-w-[360px] w-full bg-[#F0F2F5] overflow-auto">
+      {/* rightside bar upperpart */}
+      <div>
+        <Rightside_card2
+          image_link={
+            "https://scontent.fktm1-1.fna.fbcdn.net/v/t45.1600-4/358024726_23857114537770101_8599314827449466418_n.jpg?stp=c0.37.296.296a_cp0_dst-jpg_p296x100_q75_spS444&_nc_cat=1&ccb=1-7&_nc_sid=528f85&_nc_ohc=Mf8YV5XbAGMAX9pFLx9&_nc_ht=scontent.fktm1-1.fna&oh=00_AfCj9UdpuX7TbAdqcimGP2wP_fEOlvdZjsf8PZTXsbY3hA&oe=65C7782C"
+          }
+          title={"Transcription Powered by AI"}
+          discription={"cockatoo.com"}
+        />
+      </div>
+
+      <hr />
+      {/* rightsidebar lower part */}
+
       <div className="flex justify-between items-center">
         <div>
           <h1>Contact</h1>
@@ -59,7 +74,7 @@ const RightSidebar = () => {
           icon={
             <img
               src={
-                "https://scontent.fbhr4-1.fna.fbcdn.net/v/t39.30808-1/325872014_873140867264564_8303413768593299966_n.jpg?stp=dst-jpg_s320x320&_nc_cat=104&ccb=1-7&_nc_sid=5740b7&_nc_ohc=syfNTjRC1J0AX_w9AUX&_nc_ht=scontent.fbhr4-1.fna&oh=00_AfBjudCM6obZn_bSZUb7a_q0RvFlq74vliTJ41IYs-PDkA&oe=65C6A6D5"
+                "https://scontent.fktm1-1.fna.fbcdn.net/v/t39.30808-6/325872014_873140867264564_8303413768593299966_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=syfNTjRC1J0AX8FgMwk&_nc_ht=scontent.fktm1-1.fna&oh=00_AfCYBvkF_SiAc0Cfr5OrpAFjSRdSLkeF-8iHU1ApbgnLeg&oe=65C79053"
               }
               className="rounded-full"
             />
@@ -81,7 +96,7 @@ const RightSidebar = () => {
           icon={
             <img
               src={
-                "https://scontent.fbhr4-1.fna.fbcdn.net/v/t39.30808-1/339874018_607407251294702_3898574667760182565_n.jpg?stp=c0.0.320.320a_dst-jpg_p320x320&_nc_cat=105&ccb=1-7&_nc_sid=5740b7&_nc_ohc=r2-CsU-IMHgAX8Si3CS&_nc_ht=scontent.fbhr4-1.fna&oh=00_AfALC_1VkJMsODuQk6sra7NTniGd9gPeLxp6UTLWNDtBpQ&oe=65C7CA8C"
+                "https://scontent.fktm1-1.fna.fbcdn.net/v/t39.30808-1/339874018_607407251294702_3898574667760182565_n.jpg?stp=c0.0.320.320a_dst-jpg_p320x320&_nc_cat=105&ccb=1-7&_nc_sid=5740b7&_nc_ohc=r2-CsU-IMHgAX84ZQkM&_nc_ht=scontent.fktm1-1.fna&oh=00_AfD08Hc5P91CpyUvLqE7InnQSWI_lLJYUH39WXpu4y8fzg&oe=65C7CA8C"
               }
               className="rounded-full"
             />
@@ -103,7 +118,7 @@ const RightSidebar = () => {
           icon={
             <img
               src={
-                "https://scontent.fbhr4-1.fna.fbcdn.net/v/t39.30808-1/340791416_744543610549512_8019986821487973806_n.jpg?stp=c0.23.100.100a_dst-jpg_p100x100&_nc_cat=107&ccb=1-7&_nc_sid=5740b7&_nc_ohc=CmD0Y0YJV-MAX9BLL-e&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.fbhr4-1.fna&oh=00_AfAWFdyvUJC6b6pnp2wJ_XSXx6BwB4phwN9gD7auLJcvYQ&oe=65C6A826"
+                "https://scontent.fktm1-1.fna.fbcdn.net/v/t1.6435-9/126527658_410304213656817_1554798717553608074_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=7a1959&_nc_ohc=4qZ3KsI9XGMAX9Af-ki&_nc_ht=scontent.fktm1-1.fna&oh=00_AfBbGXa5KhAi1jV96fOdw8pGrCjuiA3Qt6P6V4K2iMn8_w&oe=65EAD65B"
               }
               className="rounded-full"
             />

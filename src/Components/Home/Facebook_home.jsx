@@ -1,18 +1,19 @@
 import React from "react";
-import Box_home from "./Box_home";
-import { StoryCart } from "./StoryCart";
+import { StoryCart } from "./Card_component/StoryCart";
+import { Create_post_card } from "./Card_component/Create_post_card";
+import video_icon from "../../assets/fbvideo.png";
+import image_icon from "../../assets/image.png";
+import felling_icon from "../../assets/felling.png";
 
 const Facebook_home = () => {
   return (
-    <div className="h-screen w-[800px] border border-black flex gap-2 justify-center ">
-      <div className="w-[590px] h-[265px] mt-5 overflow-x-scroll no-scrollbar ">
-        <div className="w-[590px] h-[250px] flex gap-2 justify-center ">
+    <div className="h-screen w-[800px] border border-black flex flex-col items-center ">
+      {/* Facebook story section */}
+      <div className="w-[590px] h-[265px] mt-5  border border-black flex items-center pb-[14px]">
+        <div className="w-[590px] h-[250px] flex gap-2 justify-center border border-black overflow-auto no-scrollbar">
           <StoryCart
-            image={
-              <img
-                src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1699660800&semt=sph"
-                className="h-[250px]"
-              />
+            url={
+              "https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1699660800&semt=sph"
             }
             addstory={
               <div className=" rounded-b-lg w-[139px] bg-black h-[49px] relative">
@@ -33,8 +34,36 @@ const Facebook_home = () => {
           <StoryCart />
           <StoryCart />
           <StoryCart />
+          <StoryCart />
+          <StoryCart />
         </div>
       </div>
+      {/* story section ends */}
+
+      {/* Create post section */}
+      <div className="w-[500px] h-[122px] border px-3 pt-4 pb-[10px] bg-white rounded-xl">
+        <div className="w-[468px] h-[40px]  flex items-center gap-2 mb-3">
+          <img
+            src="https://scontent.fktm1-1.fna.fbcdn.net/v/t39.30808-6/411738791_122098223012159401_2080266576038945155_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=Pq3DutQerAsAX9Glzv5&_nc_ht=scontent.fktm1-1.fna&oh=00_AfDpxeYlZXbdePKXTprK-ZIGWuoONAEgQ7oieyl-LMEurw&oe=65C7D8E5"
+            alt=""
+            className="rounded-full w-[40px] h-[40px]"
+          />
+          <div className="w-[420px] h-[40px]  flex items-center rounded-full justify-center bg-[#F0F2F5]">
+            <input
+              type="text"
+              className="w-[396px] h-[22px] rounded-full bg-[#F0F2F5]"
+              placeholder="What's on your mind Sudip?"
+            />
+          </div>
+        </div>
+        <hr />
+        <div className="flex justify-around pt-2 w-[468px] h-[49px]">
+          <Create_post_card icons={video_icon} title={"Live video"} />
+          <Create_post_card icons={image_icon} title={"Photo/video"} />
+          <Create_post_card icons={felling_icon} title={"Feeling/activity"} />
+        </div>
+      </div>
+      {/* create post section end */}
     </div>
   );
 };
