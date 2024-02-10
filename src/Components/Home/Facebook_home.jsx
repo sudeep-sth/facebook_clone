@@ -7,10 +7,10 @@ import felling_icon from "../../assets/felling.png";
 
 const Facebook_home = () => {
   return (
-    <div className="h-screen w-[800px] border border-black flex flex-col items-center ">
+    <div className="h-screen w-[800px] flex flex-col items-center ">
       {/* Facebook story section */}
-      <div className="w-[590px] h-[265px] mt-5  border border-black flex items-center pb-[14px]">
-        <div className="w-[590px] h-[250px] flex gap-2 justify-center border border-black overflow-auto no-scrollbar">
+      <div className="w-[590px] h-[265px] mt-5    flex items-center pb-[14px]">
+        <div className="w-[590px] h-[250px] flex gap-2 justify-center   overflow-auto no-scrollbar">
           <StoryCart
             url={
               "https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1699660800&semt=sph"
@@ -64,6 +64,25 @@ const Facebook_home = () => {
         </div>
       </div>
       {/* create post section end */}
+
+      {/* post section */}
+
+      <div className="w-[500px] h-[500px] border px-3 pt-4 pb-[10px] bg-white rounded-xl mt-2">
+        <div className="w-[468px] h-[40px]  flex items-center gap-2 mb-3">
+          <img
+            src="https://scontent.fktm1-1.fna.fbcdn.net/v/t39.30808-6/411738791_122098223012159401_2080266576038945155_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=Pq3DutQerAsAX9Glzv5&_nc_ht=scontent.fktm1-1.fna&oh=00_AfDpxeYlZXbdePKXTprK-ZIGWuoONAEgQ7oieyl-LMEurw&oe=65C7D8E5"
+            alt=""
+            className="rounded-full w-[40px] h-[40px]"
+          />
+          <div className="w-[420px] h-[40px]  ">
+            <div>
+              <span>sudip shrestha </span> is in{" "}
+              <span>supa deurali tempal, argakhachi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* post section end */}
     </div>
   );
 };
