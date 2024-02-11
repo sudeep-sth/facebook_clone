@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { Link } from "react-router-dom";
 import icon1 from "../../assets/heart.png";
@@ -13,6 +13,8 @@ import { IoIosArrowDown } from "react-icons/io";
 import { Leftside_cart } from "./Leftside_cart";
 
 const Leftside_data = () => {
+  const [show, setShow] = useState(false);
+
   const data = [
     {
       path: "/profile",
@@ -81,44 +83,50 @@ const Leftside_data = () => {
         <Leftside_cart title={"play game"} icon={<img src={icon3} />} />
         <Leftside_cart title={"pages"} icon={<img src={icon4} />} />
         <Leftside_cart title={"creater"} icon={<img src={icon5} />} />
-        <Leftside_cart title={"saved"} icon={<img src={icon6} />} />
-        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
-        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
-        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
-        <Leftside_cart
-          title={"See more"}
-          icon={
-            <div className="w-10 h-10 ">
-              <IoIosArrowDown className="border " />
-            </div>
-          }
-        />
-        <hr className="border-1 border-gray-300" />
-        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
-        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
-        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
-        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
-        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
-        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
-        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
-        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
-        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
-        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
-        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
-        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
-        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
-        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
-        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
-        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
-        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
-        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
-        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
-        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
-        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
-        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
-        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
-        <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+
+        <div className={`${show ? "block" : "hidden"}`}>
+          <Leftside_cart title={"saved"} icon={<img src={icon6} />} />
+          <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+          <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+          <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+          <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+          <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+          <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+          <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+          <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+          <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+          <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+          <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+          <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+          <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+          <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+          <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+          <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+          <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+          <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+          <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+          <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+          <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+          <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+          <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+          <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+          <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+          <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+          <Leftside_cart title={"company"} icon={<img src={icon7} />} />
+        </div>
+        <button className="" onClick={() => setShow(!show)}>
+          <Leftside_cart
+            title={"See more"}
+            icon={
+              <div className="w-10 h-10 rounded-full  flex items-center  ">
+                <IoIosArrowDown className="w-6 h-6 bg-gray-200 rounded-full p-1" />
+              </div>
+            }
+            datas={console.log("hellow")}
+          />
+        </button>
       </div>
+      <hr className="border-1 border-gray-300" />
     </div>
   );
 };

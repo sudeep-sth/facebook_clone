@@ -1,16 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import { StoryCart } from "./Card_component/StoryCart";
 import { Create_post_card } from "./Card_component/Create_post_card";
 import video_icon from "../../assets/fbvideo.png";
 import image_icon from "../../assets/image.png";
 import felling_icon from "../../assets/felling.png";
+import { Write_post } from "./Card_component/Write_post";
 
 const Facebook_home = () => {
+  const [postpop, setPostpop] = useState(false);
+
+  const openpostcard = () => {
+    setPostpop(true);
+    console.log("first");
+  };
   return (
     <div className="h-screen w-[800px] flex flex-col items-center ">
+      {/* <Write_post /> */}
+
+      {postpop && <Write_post cross={setPostpop(false)} />}
+
       {/* Facebook story section */}
-      <div className="w-[590px] h-[265px] mt-5    flex items-center pb-[14px]">
-        <div className="w-[590px] h-[250px] flex gap-2 justify-center   overflow-auto no-scrollbar">
+      <div className="max-w-[590px]  h-[265px] mt-5    flex items-center pb-[14px] ">
+        <div className="w-full h-[250px] flex gap-2 overflow-x-scroll no-scrollbar">
           <StoryCart
             url={
               "https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1699660800&semt=sph"
@@ -30,12 +41,66 @@ const Facebook_home = () => {
             }
             name={<h6 className="font-semibold text-[15px]">sudip shrestha</h6>}
           />
-
-          <StoryCart />
-          <StoryCart />
-          <StoryCart />
-          <StoryCart />
-          <StoryCart />
+          <StoryCart
+            url={
+              "https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            }
+            name={<h6 className="font-semibold text-[15px]">sudip shrestha</h6>}
+          />
+          <StoryCart
+            url={
+              "https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            }
+            name={<h6 className="font-semibold text-[15px]">sudip shrestha</h6>}
+          />
+          <StoryCart
+            url={
+              "https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            }
+            name={<h6 className="font-semibold text-[15px]">sudip shrestha</h6>}
+          />
+          <StoryCart
+            url={
+              "https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            }
+            name={<h6 className="font-semibold text-[15px]">sudip shrestha</h6>}
+          />
+          <StoryCart
+            url={
+              "https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            }
+            name={<h6 className="font-semibold text-[15px]">sudip shrestha</h6>}
+          />
+          <StoryCart
+            url={
+              "https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            }
+            name={<h6 className="font-semibold text-[15px]">sudip shrestha</h6>}
+          />
+          <StoryCart
+            url={
+              "https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            }
+            name={<h6 className="font-semibold text-[15px]">sudip shrestha</h6>}
+          />
+          <StoryCart
+            url={
+              "https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            }
+            name={<h6 className="font-semibold text-[15px]">sudip shrestha</h6>}
+          />
+          <StoryCart
+            url={
+              "https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            }
+            name={<h6 className="font-semibold text-[15px]">sudip shrestha</h6>}
+          />
+          <StoryCart
+            url={
+              "https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            }
+            name={<h6 className="font-semibold text-[15px]">sudip shrestha</h6>}
+          />
         </div>
       </div>
       {/* story section ends */}
@@ -53,6 +118,7 @@ const Facebook_home = () => {
               type="text"
               className="w-[396px] h-[22px] rounded-full bg-[#F0F2F5]"
               placeholder="What's on your mind Sudip?"
+              onClick={openpostcard}
             />
           </div>
         </div>
