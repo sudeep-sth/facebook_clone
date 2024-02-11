@@ -11,14 +11,10 @@ const Facebook_home = () => {
 
   const openpostcard = () => {
     setPostpop(true);
-    console.log("first");
+    // console.log("first");
   };
   return (
     <div className="h-screen w-[800px] flex flex-col items-center ">
-      {/* <Write_post /> */}
-
-      {postpop && <Write_post cross={setPostpop(false)} />}
-
       {/* Facebook story section */}
       <div className="max-w-[590px]  h-[265px] mt-5    flex items-center pb-[14px] ">
         <div className="w-full h-[250px] flex gap-2 overflow-x-scroll no-scrollbar">
@@ -130,6 +126,12 @@ const Facebook_home = () => {
         </div>
       </div>
       {/* create post section end */}
+
+      {/* <Write_post /> */}
+
+      {postpop && <Write_post cross={setPostpop} />}
+
+      {/* write post sectio end */}
 
       {/* post section */}
 

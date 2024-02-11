@@ -11,6 +11,7 @@ import icon7 from "../../assets/company.png";
 
 import { IoIosArrowDown } from "react-icons/io";
 import { Leftside_cart } from "./Leftside_cart";
+import { IoIosArrowUp } from "react-icons/io";
 
 const Leftside_data = () => {
   const [show, setShow] = useState(false);
@@ -114,16 +115,15 @@ const Leftside_data = () => {
           <Leftside_cart title={"company"} icon={<img src={icon7} />} />
           <Leftside_cart title={"company"} icon={<img src={icon7} />} />
         </div>
-        <button className="" onClick={() => setShow(!show)}>
-          <Leftside_cart
-            title={"See more"}
-            icon={
-              <div className="w-10 h-10 rounded-full  flex items-center  ">
-                <IoIosArrowDown className="w-6 h-6 bg-gray-200 rounded-full p-1" />
-              </div>
-            }
-            datas={console.log("hellow")}
-          />
+        <button className="flex items-center" onClick={() => setShow(!show)}>
+          <div className="w-10 h-10 rounded-full  flex items-center  ">
+            {show ? (
+              <IoIosArrowUp className="w-6 h-6 bg-gray-200 rounded-full p-1" />
+            ) : (
+              <IoIosArrowDown className="w-6 h-6 bg-gray-200 rounded-full p-1" />
+            )}
+          </div>
+          <p>See more</p>
         </button>
       </div>
       <hr className="border-1 border-gray-300" />
